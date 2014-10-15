@@ -63,6 +63,44 @@ a, a:visited {
   }
 }
 
+#index {
+  background: #689f38;
+
+  > ul {
+    padding: 50px 100px;
+    margin: 0;
+    list-style: none;
+
+    > li {
+      display: inline-block;
+      padding: 0;
+      margin: 10px;
+
+      > a {
+        > img {
+          display: block;
+          width: 200px;
+          height: 140px;
+          background: #DDD;
+          border: none;
+        }
+
+        > div {
+          text-align: center;
+        }
+
+        padding: 20px;
+        display: block;
+        background: #FFF;
+        border-radius: 2px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+        color: #777;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
 .site-module {
   margin: 0;
   padding: 0;
@@ -88,5 +126,6 @@ a, a:visited {
     margin-bottom: 50px;
   }
 
+  @import "module_profile";
   @import "module_calendar";
 }
