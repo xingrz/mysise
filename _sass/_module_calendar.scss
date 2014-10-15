@@ -1,0 +1,29 @@
+&.calendar {
+  > header {
+    background: #0097a7;
+  }
+
+  #calendar-table {
+    width: 100%;
+    font-size: 90%;
+
+    tr:first-of-type {
+      th {
+        width: 19%;
+      }
+
+      th:first-of-type {
+        width: 5%;
+      }
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    tr:nth-of-type(even) td:nth-of-type(even),
+    tr:nth-of-type(odd) td:nth-of-type(odd) {
+      background: #F9F9F9;
+    }
+  }
+}

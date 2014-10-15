@@ -1,0 +1,16 @@
+title: XiNGRZ's
+permalink: /:year/:year-:month-:day/:title.html
+
+exclude: [ ".gitignore", "README.md", "CNAME" ]
+
+markdown: redcarpet
+highlighter: pygments
+
+sass:
+    style: :compressed
+
+url: "http://xingrz.me"
+
+disqus_short_name: 'xingrz'
+
+google_tracking_id: 'UA-25258167-6'
