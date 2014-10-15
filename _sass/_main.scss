@@ -63,6 +63,73 @@ a, a:visited {
   }
 }
 
+#login {
+  background: #689f38;
+
+  > form {
+    display: block;
+    width: 400px;
+    margin: 100px auto;
+    padding: 50px 50px 10px;
+
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+
+
+    > input {
+      display: block;
+      width: 100%;
+
+      background: transparent;
+      border: none;
+      padding: 10px;
+      margin: 20px 0;
+
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+      }
+
+      &[type="text"],
+      &[type="password"] {
+        font-size: 150%;
+
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        transition: border-bottom-color 300ms;
+
+        &:focus {
+          border-bottom-color: #F90;
+        }
+      }
+
+      &[type="submit"] {
+        font-size: 120%;
+        line-height: 2;
+
+        color: #FFF;
+        cursor: pointer;
+        margin: 40px 0;
+
+        border-radius: 2px;
+
+        background: rgba(#F90, 0.75);
+        transition: background 300ms;
+
+        &:hover {
+          background: #F90;
+        }
+
+        &:active {
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
 #index {
   background: #689f38;
 
